@@ -187,6 +187,7 @@ img {
 }
 
 .wrapper {
+  align-items: baseline;
   display: flex;
 }
 
@@ -279,7 +280,7 @@ img {
   padding: 200px 0;
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
+  max-width: 1600px;
 
   text-align: center;
   background-color: #c4c4c4;
@@ -578,15 +579,20 @@ img {
   flex-wrap: wrap;
 }
 
-.projects-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .projects-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.projects-link {
+  display: block;
+}
+
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-wrap {
